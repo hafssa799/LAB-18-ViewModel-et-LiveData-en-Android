@@ -1,36 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp">
+=======
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/pink_light"
+    tools:context=".MainActivity">
+>>>>>>> 4b9c34571268ab8ed478268d9df9a07b4de83769
 
     <TextView
         android:id="@+id/tvCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="0"
         android:textSize="80sp"
         android:layout_marginBottom="32dp"/>
+=======
+        android:layout_marginBottom="32dp"
+        android:text="0"
+        android:textColor="@color/pink_dark"
+        android:textSize="80sp"
+        android:textStyle="bold" />
+>>>>>>> 4b9c34571268ab8ed478268d9df9a07b4de83769
 
     <Button
         android:id="@+id/btnIncrement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:backgroundTint="@color/pink_primary"
+        android:textColor="@android:color/white"
+>>>>>>> 4b9c34571268ab8ed478268d9df9a07b4de83769
         android:text="INCRÉMENTER" />
 
     <Button
         android:id="@+id/btnDecrement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+        android:backgroundTint="@color/pink_primary"
+        android:textColor="@android:color/white"
+>>>>>>> 4b9c34571268ab8ed478268d9df9a07b4de83769
         android:text="DÉCRÉMENTER" />
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="RÉINITIALISER"
         style="@style/Widget.MaterialComponents.Button.TextButton" />
+=======
+        android:backgroundTint="@color/pink_accent"
+        android:textColor="@android:color/white"
+        android:text="RÉINITIALISER" />
+>>>>>>> 4b9c34571268ab8ed478268d9df9a07b4de83769
 
 </LinearLayout>

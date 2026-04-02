@@ -43,12 +43,18 @@ Ce projet est une application Android pédagogique démontrant l'utilisation des
 
 Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-plan sans bloquer l'interface utilisateur.
 
+
+
 public void incrementFromBackground() {
     new Thread(() -> {
-        // ... calcul ...
-        countLiveData.postValue(newValue); // ✔️ thread-safe
+        Integer current = countLiveData.getValue();
+        if (current == null) current = 0;
+
+        int newValue = current + 1;
+        countLiveData.postValue(newValue);
     }).start();
 }
+
 
 2. Persistance Ultime (SavedStateHandle)
 

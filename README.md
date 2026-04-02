@@ -85,14 +85,17 @@ https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 # Installation
 
-## 1.Dépendances Gradle (build.gradle.kts) :
+## 1. Dépendances Gradle (build.gradle.kts) :
 
 dependencies {
+
     implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
+    
     implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
+    
 }
 
-## 2.Structure du projet :
+## 2. Structure du projet :
 
 •MainActivity.java : Gère uniquement l'affichage et les clics.
 

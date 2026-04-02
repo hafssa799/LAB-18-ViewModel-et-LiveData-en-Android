@@ -47,11 +47,17 @@ Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-p
 
 
 public void incrementFromBackground() {
+
     new Thread(() -> {
+    
         Integer current = countLiveData.getValue();
+        
         if (current == null) current = 0;
+        
         int newValue = current + 1;
+        
         countLiveData.postValue(newValue);
+        
     }).start();
 }
 

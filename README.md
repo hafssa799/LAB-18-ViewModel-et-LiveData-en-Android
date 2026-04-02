@@ -43,6 +43,7 @@ Ce projet est une application Android pédagogique démontrant l'utilisation des
 
 Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-plan sans bloquer l'interface utilisateur.
 
+
 public void incrementFromBackground() {
 
     new Thread(() -> {
@@ -79,17 +80,16 @@ https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 3.Réactivité : Mise à jour instantanée de l'UI grâce au LiveData.
 
+
 # Installation
 
-1.Dépendances Gradle (build.gradle.kts) :
-
+## 1.Dépendances Gradle (build.gradle.kts) :
 
 implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
 
 implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
 
-
-2.Structure du projet :
+## 2.Structure du projet :
 
 •MainActivity.java : Gère uniquement l'affichage et les clics.
 

@@ -87,11 +87,10 @@ https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 ## 1.Dépendances Gradle (build.gradle.kts) :
 
-
-implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
-
-implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
-
+dependencies {
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
+}
 
 ## 2.Structure du projet :
 

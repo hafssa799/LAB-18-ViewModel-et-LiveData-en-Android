@@ -45,7 +45,6 @@ Ce projet est une application Android pédagogique démontrant l'utilisation des
 Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-plan sans bloquer l'interface utilisateur.
 
 
-
 public void incrementFromBackground() {
 
     new Thread(() -> {

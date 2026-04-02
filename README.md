@@ -46,7 +46,7 @@ Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-p
 public void incrementFromBackground() {
     new Thread(() -> {
         // ... calcul ...
-        countLiveData.postValue(newValue); // Safe pour le thread UI
+        countLiveData.postValue(newValue); // ✔️ thread-safe
     }).start();
 }
 

@@ -2,7 +2,7 @@
 
 Ce projet est une application Android pédagogique démontrant l'utilisation des composants d'architecture Android Jetpack. Il illustre comment gérer efficacement le cycle de vie, la persistance des données lors de la rotation d'écran et la séparation des responsabilités.
 
-## Sommaire
+# Sommaire
 
 ### 1.Introduction
 
@@ -45,11 +45,11 @@ Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-p
 
 
 
+
 public void incrementFromBackground() {
     new Thread(() -> {
         Integer current = countLiveData.getValue();
         if (current == null) current = 0;
-
         int newValue = current + 1;
         countLiveData.postValue(newValue);
     }).start();
@@ -79,8 +79,10 @@ https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 1.Dépendances Gradle (build.gradle.kts) :
 
+
 implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
 implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
+
 
 2.Structure du projet :
 

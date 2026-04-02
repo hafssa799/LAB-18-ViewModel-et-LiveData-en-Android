@@ -43,9 +43,6 @@ Ce projet est une application Android pédagogique démontrant l'utilisation des
 
 Ajout d'une méthode pour incrémenter le compteur depuis un thread d'arrière-plan sans bloquer l'interface utilisateur.
 
-
-
-
 public void incrementFromBackground() {
 
     new Thread(() -> {
@@ -59,6 +56,7 @@ public void incrementFromBackground() {
         countLiveData.postValue(newValue);
         
     }).start();
+    
 }
 
 
@@ -87,6 +85,7 @@ https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 
 implementation("androidx.lifecycle:lifecycle-viewmodel:2.8.7")
+
 implementation("androidx.lifecycle:lifecycle-livedata:2.8.7")
 
 

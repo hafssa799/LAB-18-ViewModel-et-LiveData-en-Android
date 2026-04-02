@@ -19,11 +19,11 @@ Ce projet est une application Android pédagogique démontrant l'utilisation des
 
 # Introduction
 
-Le défi majeur en développement Android est la destruction/récréation de l'activité lors d'un changement de configuration (ex: rotation). Ce projet montre comment passer d'une gestion manuelle fastidieuse à une architecture réactive et robuste.
+- Le défi majeur en développement Android est la destruction/récréation de l'activité lors d'un changement de configuration (ex: rotation). Ce projet montre comment passer d'une gestion manuelle fastidieuse à une architecture réactive et robuste.
 
 # Étape 1 : Le problème classique
 
-Dans cette phase, nous utilisons une variable int count simple dans la MainActivity.
+- Dans cette phase, nous utilisons une variable int count simple dans la MainActivity.
 
 •Problème : En tournant l'écran, l'activité est détruite et le compteur revient à zéro.
 
@@ -31,7 +31,7 @@ Dans cette phase, nous utilisons une variable int count simple dans la MainActiv
 
 # Étape 2 : La Solution Jetpack
 
-Implémentation du duo ViewModel et LiveData.
+- Implémentation du duo ViewModel et LiveData.
 
 •CounterViewModel.java : Stocke la donnée en dehors du cycle de vie de l'Activity.
 
@@ -52,10 +52,15 @@ public void incrementFromBackground() {
 
 2. Persistance Ultime (SavedStateHandle)
 
-Grâce à SavedStateHandle, le compteur survit même si le système Android tue le processus de l'application (Process Death) pour libérer de la mémoire.
+- Grâce à SavedStateHandle, le compteur survit même si le système Android tue le processus de l'application (Process Death) pour libérer de la mémoire.
 
 # Démonstration Vidéo
 
+
+https://github.com/user-attachments/assets/bdc4ac55-5e47-477c-b3ca-00f8e9af874f
+
+
+https://github.com/user-attachments/assets/bb0a9a24-3d26-4b78-b2d8-829a790ef1e4
 
 
 1.Rotation d'écran : Le compteur reste à sa valeur (ex: 15) après avoir tourné l'émulateur.
